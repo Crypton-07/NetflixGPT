@@ -81,10 +81,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - useRef Hooks
 - Firebase setup
 - Deployed app on firebase
-- SignUp / SignIn 
+- SignUp / SignIn
 - Redux store with userSlice
 - Implemented Signout
 - Update Profile
+- Fetch from TMDB Movies API
+- BugFix : Signup user displayName and Profile picture update
+- Bugfix : If the user is logged in redirect to /browse to /login page and vice versa.
+- Bugfix : Unsubscribed to the onAuthStateChange callback.
+- Addeed constants.js file (Contains hardcoded values)
+
+- Register for tmdb api and create an app and get access token.
+- Make an api call for movieList/nowPlaying
+- Custom hook for NowPlaying movies
+- Create a movieSlice
+- updated store with movies Data
+- Main container and secondary container
+- Fetched data for trailer video
+- update store with trailer video
+- embedded youtube video and make it autoplay and mute
+-tailwind classes for css
+
 # Features
 
 - Login / Sign Up
