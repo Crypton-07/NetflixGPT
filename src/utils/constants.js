@@ -17,3 +17,9 @@ export const options = {
 };
 
 export const tmdbImageUrl = "https://image.tmdb.org/t/p/w780";
+
+export const supportedLanguages = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+];

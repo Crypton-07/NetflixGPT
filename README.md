@@ -105,7 +105,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Build movieList
 - Build MovieCard
 - Created custom hooks for each movie category i.e popular, top-rated etc.
-
+- GPT search Feature
+  - GPT search pages
+  - GPT search Bar
+- (Bonus) Multi-Languages support
+ 
 # Features
 
 - Login / Sign Up

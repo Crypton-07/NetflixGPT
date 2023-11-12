@@ -24,7 +24,6 @@ const Login = () => {
       password?.current?.value,
       name?.current?.value
     );
-    // console.log(message);
     setErrMessage(message);
     if (message) return;
     //? Now you can write logic for sign in / sign up
@@ -78,7 +77,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
           // ...
         })
         .catch((error) => {
