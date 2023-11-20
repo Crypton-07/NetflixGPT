@@ -93,15 +93,19 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img className="w-screen h-screen" src={BG_IMAGE} alt="BG_Image" />
+        <img
+          className="w-screen h-screen object-cover"
+          src={BG_IMAGE}
+          alt="BG_Image"
+        />
       </div>
-      <div className="absolute w-9/12 sm:w-6/12 md:w-5/12 lg:w-3/12 p-12 bg-black bg-opacity-90 my-20 mx-auto right-0 left-0 text-white">
+      <div className="absolute w-9/12 sm:w-7/12 md:w-5/12 lg:w-3/12 py-6 px-7 bg-black bg-opacity-90 mx-auto top-[25%] md:top-[15%] right-0 left-0 text-white">
         <form
           onSubmit={(e) => e.preventDefault()}
           className=""
           autoComplete="off"
         >
-          <h1 className="font-semibold text-3xl my-4">
+          <h1 className="font-semibold text-2xl md:text-3xl my-2 md:my-4">
             {isSignInForm ? "Sign In" : "Sign Up"}
           </h1>
           {!isSignInForm && (
@@ -109,7 +113,7 @@ const Login = () => {
               ref={name}
               type="text"
               placeholder="Enter your name"
-              className="py-3 px-2 mx-auto my-4 w-full rounded-md bg-gray-800 outline-none focus:ring-red-600 focus:ring-1"
+              className="py-2 px-2 my-2 md:py-3 mx-auto md:my-4 w-full rounded-md bg-gray-800 outline-none focus:ring-red-600 focus:ring-1"
             />
           )}
           <input
@@ -117,7 +121,7 @@ const Login = () => {
             autoComplete="new-password"
             type="text"
             placeholder="Email Address"
-            className="py-3 px-2 mx-auto my-4 w-full rounded-md bg-gray-800 outline-none focus:ring-red-600 focus:ring-1"
+            className="py-2 my-2 md:py-3 px-2 mx-auto md:my-4 w-full rounded-md bg-gray-800 outline-none focus:ring-red-600 focus:ring-1"
           />
 
           <input
@@ -125,13 +129,13 @@ const Login = () => {
             autoComplete="new-password"
             type="password"
             placeholder="Password"
-            className="py-3 px-2 mx-auto my-4 w-full rounded-md bg-gray-800 outline-none focus:ring-red-600 focus:ring-1 "
+            className="py-2 px-2 my-2 md:py-3 mx-auto md:my-4 w-full rounded-md bg-gray-800 outline-none focus:ring-red-600 focus:ring-1 "
           />
           <p className="text-red-500 font-medium text-md py-2 w-full">
             {errMessage}
           </p>
           <button
-            className="py-3 my-2 w-full bg-red-700 rounded-md"
+            className="py-2 my-1 md:py-3 md:my-2 w-full bg-red-700 rounded-md"
             onClick={handleButtonClick}
           >
             {isSignInForm ? "Sign In" : "Sign Up"}

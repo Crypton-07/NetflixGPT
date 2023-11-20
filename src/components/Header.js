@@ -51,7 +51,7 @@ const Header = () => {
     return () => unsubscribe();
   }, [navigate, dispatch]);
   return (
-    <div className="w-screen absolute px-2 py-2 bg-gradient-to-b from-black z-10 flex justify-between items-center">
+    <div className="w-screen absolute px-2 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row md:justify-between items-center ">
       <div>
         <img width={150} src={LOGO} alt="Logo" />
       </div>
@@ -74,23 +74,22 @@ const Header = () => {
             )}
           </div>
           <button
-            className="py-2 px-2 text-white font-medium rounded-sm bg-purple-600"
+            className="text-xs md:text-sm py-2 px-2 text-white font-medium rounded-sm bg-purple-600"
             onClick={handleGptSearch}
           >
             {showOptions ? "Home" : "Ask GPT?"}
           </button>
-          <img
-            className="rounded-sm cursor-pointer"
-            width={40}
-            src={user?.photoURL}
-            alt="usericon"
-          />
           <button
-            className="mx-2 px-1 py-2 bg-red-600 rounded-sm text-white font-semibold"
+            className="mx-2 px-1 py-2 bg-red-600 rounded-sm text-white font-semibold text-xs md:text-sm"
             onClick={handleSignOut}
           >
             {`Hello, ${user?.displayName}`}
           </button>
+          <img
+            className="rounded-sm cursor-pointer w-8 md:w-10"
+            src={user?.photoURL}
+            alt="usericon"
+          />
         </div>
       )}
     </div>

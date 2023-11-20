@@ -5,9 +5,9 @@ import { useEffect } from "react";
 
 const useNowPlayingMovie = () => {
   const dispatch = useDispatch();
-  const nowPlayingMovies = useSelector(
-    (store) => store.movies.nowPlayingMovies
-  );
+  // const nowPlayingMovies = useSelector(
+  //   (store) => store.movies.nowPlayingMovies
+  // );
   const getNowPlayingMovies = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/now_playing?page=1",
@@ -19,9 +19,9 @@ const useNowPlayingMovie = () => {
   };
 
   useEffect(() => {
-    !nowPlayingMovies && getNowPlayingMovies();
+    // !nowPlayingMovies && 
+    getNowPlayingMovies();
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };
 

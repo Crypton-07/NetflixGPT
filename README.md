@@ -107,8 +107,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Created custom hooks for each movie category i.e popular, top-rated etc.
 - GPT search Feature
   - GPT search pages
-  - GPT search Bar
+  - GPT slice added data
+  - GPT search Bar / used gpt 3.5 API / Memoization
 - (Bonus) Multi-Languages support
+- Fetched GPT movie suggestion
+- Reused MovieList component for GPT suggested movies
+- .env to secure our secret key
+
+
  
 # Features
 
